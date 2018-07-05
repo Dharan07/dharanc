@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+struct sudokuboard {
+        int board[9][9];
+};
+struct sudokuboards{
+    int n;
+    struct sudokuboard boards[100];
+};
+int main ()
+{
+  struct sudokuboard;
+  
+    int row[9];
+    int column[9];
+  int n;
+  int row[9];
+  int column[9];
+
+
+  struct sudokuboard input_data ()
+  {
+    struct sudokuboard s;
+    printf ("enter the no. of sudoku board");
+    scanf ("%d", &n);
+    if (elements of each row !=9 && elements of each column !=9)
+      {
+    printf ("Invalid");
+      }
+    else
+      {
+    printf ("Enter the elements of the row");
+    for(i=0;i<9;i++)
+    scanf("%d",&row);
+    printf("\n");
+    printf("Enter the elements of the column");
+    for(j+0;j<9;j++)
+    scanf("&d",&column);
+    printf("\n");
+      }
+  };
+  void output_data (struct sudokuboard s)
+  {
+    printf ("The sudoku elements are %d", s.n);
+  };
+ struct sudokuboard s;
+ s=input_data();
+ output_data(s);
+}
