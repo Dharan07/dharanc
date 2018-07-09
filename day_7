@@ -1,0 +1,28 @@
+#include <stdio.h>
+struct goals
+{
+    int sequences;
+    int score[20];
+};
+struct goals input_data()
+int main()
+{
+    int goals,sequences,score;
+    
+    {
+        struct goals g;
+        printf("Enter the no. of sequences");
+        scanf("%d",&sequences);
+        printf("Enter the score");
+        scanf("%d",&score);
+    };
+void output_data  ( struct goals g)
+    {
+    printf("The sequence is %d",&sequences);
+    printf("The score is %d",&score);
+    
+};
+struct goals g;
+g=input_data;
+output_data(g);
+}                                             
