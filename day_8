@@ -1,0 +1,43 @@
+#include <stdio.h>
+  struct fb_series
+  {
+    int strings;
+    int n;
+    char str1[20], str2[20];
+  };
+  struct fb series input_data ()
+  int main ()
+{
+  struct fb series;
+  char str1[20], str2[20];
+  int sequence;
+  {
+    struct fb series a;
+    printf ("Enter the no. of strings");
+    scanf ("%d", &n);
+    printf ("Enter the 1st string");
+    scanf ("%s", str1);
+    printf("Fibonacci series :");
+    for(i=1;i<=n;i++)
+    {
+        printf("%d,",str1);
+        next term= str1+str2;
+        str1=str2;
+        str2=next term;
+    }
+    printf ("Enter the second string");
+    scanf ("%s", str2);
+    return a;
+  };
+  void output_data (fb_series a)
+  {
+    printf ("The strings are %d" & n.a);
+    printf ("The first string is" str1.a);
+    printf ("The second string is" str2.a);
+  };
+  {
+    fb_series a;
+    a = input_data ();
+    output_data (a);
+  }
+}
