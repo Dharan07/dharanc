@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct students
+{
+    char name;
+    int reg_no;
+    char grade;
+    };
+    int main()
+    {
+        char n,g;int r;
+        struct students input_data()
+        {
+            struct students s;
+            printf("Enter the student name");
+            scanf("%s",n);
+            printf("Enter the student reg_no");
+            scanf("%d",&r);
+            printf("Enter the student grade");
+            scanf("%s",g)
+            };
+    void output_data(students)
+    {
+        printf("Student name:n\n");
+        printf("Reg_no: \n");
+        printf("Grade: \n");
+            };
+    struct students s;
+    s= input_data();
+    ouput_data(s);
+    }
