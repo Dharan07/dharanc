@@ -1,0 +1,37 @@
+#include<stdio.h>
+struct factory
+{
+    char name[20];
+    int id_no;
+    int salary;
+    char gender;
+};
+int main()
+{
+    char n,g;int s,d,i;
+    struct factory input_data()
+{ 
+    struct factory f;
+    
+    printf("Enter the employee name");
+    scanf("%s",n);
+    printf("Enter the id no");
+    scanf("%d",&d);
+    printf("Enter the employee salary");
+    scanf("%d",&s);
+    printf("Enter the employee gender");
+    scanf("%s",g);
+    };
+    struct factory output_data()
+    {
+    printf("Name: \n");
+    printf("Id.no: \n");
+    printf("Salary: \n");
+    printf("Gender: \n");
+    };
+    struct factory f;
+    f= input_data();
+    output_data(f);
+
+    
+}
