@@ -1,0 +1,28 @@
+#include<stdio.h>
+struct circles
+{
+    int pc;
+};
+int main()
+{
+    float r1,r2,x1,x2,y1,y2;int pc;
+  struct circles input_data()
+  {
+      struct circles c;
+      printf("Enter the pair of circles");
+      scanf("%d",&pc);
+      printf("Enter the radius,x and y cordinate of first circle");
+      scanf("%f%f%f",&r1,&x1,&y1);
+      printf("Enter the radius,x and y cordinate of second circle");
+      scanf("%f%f%f",&r2,&x2,&y2);
+  };
+  void output_data(struct circles c)
+  {
+      printf("The pair of circles are %d");
+      printf("The radius,x and y cordinate of first circle are %f,%f,%f");
+      printf("The radius,x and y cordinate of second circle are %f,%f,%f");
+  };
+  struct circles c;
+  c= input_data();
+  ouput_data(c);
+}
