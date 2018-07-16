@@ -1,0 +1,37 @@
+#include<stdio.h>
+struct point
+{
+    float x;
+    float y;
+};
+struct circle
+{
+    float radius;
+    struct point centre;
+};
+ struct circle input_data()
+     {
+         struct circle c;
+         printf("Enter the radius of the circle");
+         scanf("%f",&c.radius);
+         printf("Enter the centre of the circle");
+         scanf("%f%f",&c.centre.x,&c.centre.y);
+     }
+
+void ouput_data(struct circle c)
+     {
+         printf("Radius: %f \n",c.radius);
+         printf("centre: %f,%f \n",c.entre.x,c.centre.y);
+     }
+int main()
+{
+     float radius,center;struct point centre;
+    
+     struct circle c;
+     c= input_data();
+     ouput_data(c);
+}
+
+
+
+
