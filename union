@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct _union
+{
+    float nu[10];
+    float ni;
+};
+struct _union input_data()
+{
+    struct _union u;
+    printf("Enter the number of union");
+    scanf("%f",&u.nu);
+    printf("Enter the number of intervals");
+    scanf("%f",&u.ni);
+};
+void output_data(struct _union u)
+{
+    printf("No. of union: %f \n",u.nu);
+    printf("No. of intervals: %f \n",u.ni);
+};
+int main()
+{
+struct _union u;
+u= input_data();
+output_data(u);
+}
