@@ -1,0 +1,40 @@
+#include<stdio.h>
+struct polygon
+{
+    float vertices[20];
+    float points;
+};
+struct polygon input_data()
+{
+    int v,p,i;
+    float x,y,xp,yp;
+    struct polygon p;
+    for(i=3;i>=3;i++)
+    {
+    printf("Enter the no. of vertices");
+    scanf("%d",&v);
+    printf("Enter the vertices");
+    scanf("%f%f",&x,&y);
+    printf("Enter the number of points to be tested");
+    scanf("%d",&p); 
+    printf("Enter the points to be tested");
+     scanf("%f%f",&xp,&yp);
+    }
+   
+};
+void output_data(struct polygon p)
+{
+    printf("No. of Vertices: %d \n");
+    printf("Vertices: (%f,%f)");
+    printf("No. of Points to be tested: %d \n");
+    printf("points: (%f,%f)");
+    
+};
+int main()
+{
+    int v,p,i;
+    float x,y,xp,yp;
+}
+struct polygon p;
+p= input_data();
+ouput_data(p);
