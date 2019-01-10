@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct add
+{
+int num1;
+int num2;
+int area;
+};
+struct add input()
+{
+    struct add n;
+    printf("Enter two numbers ");
+    scanf("%d%d",&n.num1,&n.num2);
+    return n;
+};
+struct add comp(struct add n)
+{
+    n.area=(n.num1*n.num2)/2;
+    return n;
+};
+void out(struct add n)
+{
+    printf("The area is %d",n.area);
+};
+int main()
+{
+    struct add n;
+    n=input();
+    n=comp(n);
+    out(n);
+}
