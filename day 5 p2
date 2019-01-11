@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<math.h>
+struct rect
+{
+    int P1;
+    int P2;
+    int P3;
+    int area;
+};
+struct rect input()
+{
+     int x1,x2,x3,y1,y2,y3;
+    struct rect a;
+    a.P1=(x1,y1);
+    a.P2=(x2,y2);
+    a.P3=(x3,y3);
+    printf("Enter the value of x1 and y1");
+    scanf("%d%d",&x1,&y1);
+    printf("Enter the value of x2 and y2");
+    scanf("%d%d",&x2,&y2);
+    printf("Enter the value of x3 and y3");
+    scanf("%d%d",&x3,&y3);
+    return a;
+}
+struct rect comp(struct rect a)
+{
+    int B,L,area;
+    int x1,x2,x3,y1,y2,y3;
+    B =sqrt((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
+    L =sqrt((x3-x2)*(x3-x2))+((y3-y2)*(y3-y2));
+    a.P1=(x1,y1);
+    a.P2=(x2,y2);
+    a.P3=(x3,y3);
+    a.area =L*B;
+    return a;
+}
+void output(struct rect a)
+{
+    printf("The area of the rectangle is %d",a.area);
+}
+int main()
+{
+    struct rect a;
+    int x1,x2,x3,y1,y2,y3;
+    a =input();
+    a=comp(a);
+    output(a);
+}
