@@ -1,0 +1,20 @@
+#include<stdio.h>
+struct std
+{
+    char name;
+    int id;
+};
+int main()
+{
+    struct std*ptr,s;
+    ptr= &s;
+    printf("Enter the name ");
+    scanf("%c",&ptr->name);
+    printf("Enter the id");
+    scanf("%d",&ptr->id);
+
+    printf("STUDENT DETAILS \n");
+    printf("Name: %c\n",ptr->name);
+    printf("Id: %d\n",ptr->id);
+    return 0;
+}
